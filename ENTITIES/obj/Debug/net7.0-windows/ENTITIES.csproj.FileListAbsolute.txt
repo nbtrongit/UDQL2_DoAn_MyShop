@@ -1,0 +1,14 @@
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\bin\Debug\net7.0-windows\ENTITIES.deps.json
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\bin\Debug\net7.0-windows\ENTITIES.dll
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\bin\Debug\net7.0-windows\ENTITIES.pdb
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.AssemblyInfo.cs
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.dll
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\refint\ENTITIES.dll
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.pdb
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\ref\ENTITIES.dll
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\bin\Debug\net7.0-windows\ENTITIES.runtimeconfig.json
+C:\Users\PC\Desktop\UDQL2_DOAN - 1\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.genruntimeconfig.cache
