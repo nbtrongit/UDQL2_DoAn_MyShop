@@ -15,3 +15,20 @@ C:\Users\PC\Desktop\UDQL2_DOAN - 1\SERVICES\obj\Debug\net7.0-windows\SERVICES.dl
 C:\Users\PC\Desktop\UDQL2_DOAN - 1\SERVICES\obj\Debug\net7.0-windows\refint\SERVICES.dll
 C:\Users\PC\Desktop\UDQL2_DOAN - 1\SERVICES\obj\Debug\net7.0-windows\SERVICES.pdb
 C:\Users\PC\Desktop\UDQL2_DOAN - 1\SERVICES\obj\Debug\net7.0-windows\ref\SERVICES.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\bin\Debug\net7.0-windows\SERVICES.deps.json
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\bin\Debug\net7.0-windows\SERVICES.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\bin\Debug\net7.0-windows\SERVICES.pdb
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\bin\Debug\net7.0-windows\DAL.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\bin\Debug\net7.0-windows\ENTITIES.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\bin\Debug\net7.0-windows\DAL.pdb
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\bin\Debug\net7.0-windows\ENTITIES.pdb
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\SERVICES.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\SERVICES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\SERVICES.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\SERVICES.AssemblyInfo.cs
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\SERVICES.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\SERVICES.csproj.CopyComplete
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\SERVICES.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\refint\SERVICES.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\SERVICES.pdb
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\SERVICES\obj\Debug\net7.0-windows\ref\SERVICES.dll

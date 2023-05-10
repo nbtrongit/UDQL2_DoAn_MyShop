@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyShop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
-    </Grid>
+        Title="LOGIN" Height="480" Width="717" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Canvas>
+        <Label Content="Đăng Nhập" FontSize="40" FontStyle="Normal" FontWeight="Bold" Canvas.Left="230" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Tên Đăng Nhập" Height="41" Width="194" FontSize="20" Canvas.Left="123" Canvas.Top="99" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Label Content="Mật Khẩu" Height="40" Width="144" FontSize="20" Canvas.Left="123" Canvas.Top="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox Name="textBoxUsername" Height="40" Width="473" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="26" Canvas.Left="123" Canvas.Top="140" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <PasswordBox Name="passwordBox" Height="40" Width="473" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" FontSize="26" Canvas.Left="123" Canvas.Top="240" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Name="buttonLogin" Click="buttonLogin_Click" Content="Đăng Nhập" IsDefault="True" FontSize="26" Height="40" Width="147" Canvas.Left="195" Canvas.Top="375" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button Name="buttonCancel" Click="buttonCancel_Click" Content="Thoát" IsCancel="True" FontSize="26" Height="40" Width="147" Canvas.Left="403" Canvas.Top="375" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <CheckBox Name="checkBoxRemember" Content="Lưu Thông Tin Đăng Nhập" Canvas.Left="123" Canvas.Top="308" HorizontalAlignment="Center" VerticalAlignment="Top"></CheckBox>
+    </Canvas>
 </Window>

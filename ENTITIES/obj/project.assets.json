@@ -3430,11 +3430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\UDQL2_DOAN - 1\\ENTITIES\\ENTITIES.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\Quy trình làm\\UDQL2_DOAN - 2\\ENTITIES\\ENTITIES.csproj",
       "projectName": "ENTITIES",
-      "projectPath": "C:\\Users\\PC\\Desktop\\UDQL2_DOAN - 1\\ENTITIES\\ENTITIES.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\Quy trình làm\\UDQL2_DOAN - 2\\ENTITIES\\ENTITIES.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\UDQL2_DOAN - 1\\ENTITIES\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\Quy trình làm\\UDQL2_DOAN - 2\\ENTITIES\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
