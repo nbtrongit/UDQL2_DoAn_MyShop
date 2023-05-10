@@ -97,5 +97,11 @@ namespace MyShop
             var screen = new ReportRevenueProfitWindow();
             screen.ShowDialog();
         }
+
+        private void buttonReportProduct_Click(object sender, RoutedEventArgs e)
+        {
+            var screen = new ReportProductWindow();
+            screen.ShowDialog();
+        }
     }
 }

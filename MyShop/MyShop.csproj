@@ -13,6 +13,7 @@
     <None Remove="Data\Icon\ico_category.png" />
     <None Remove="Data\Icon\ico_order.png" />
     <None Remove="Data\Icon\ico_product.jpg" />
+    <None Remove="Data\Icon\ico_reportproduct.png" />
     <None Remove="Data\Icon\ico_revenue.png" />
     <None Remove="Data\Icon\pencil.png" />
   </ItemGroup>
@@ -33,6 +34,7 @@
     <Resource Include="Data\Icon\ico_category.png" />
     <Resource Include="Data\Icon\ico_order.png" />
     <Resource Include="Data\Icon\ico_product.jpg" />
+    <Resource Include="Data\Icon\ico_reportproduct.png" />
     <Resource Include="Data\Icon\ico_revenue.png" />
     <Resource Include="Data\Icon\pencil.png" />
   </ItemGroup>

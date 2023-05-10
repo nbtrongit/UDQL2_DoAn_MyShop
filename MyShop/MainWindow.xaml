@@ -54,6 +54,11 @@
                             <Image Source="Data/Icon/ico_revenue.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
                         </Fluent:Button.Icon>
                     </Fluent:Button>
+                    <Fluent:Button Name="buttonReportProduct" Click="buttonReportProduct_Click" FontWeight="Bold" Header="Product">
+                        <Fluent:Button.Icon>
+                            <Image Source="Data/Icon/ico_reportproduct.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
+                        </Fluent:Button.Icon>
+                    </Fluent:Button>
                 </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
         </Fluent:Ribbon>

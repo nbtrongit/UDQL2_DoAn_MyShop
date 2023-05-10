@@ -9,6 +9,7 @@ using LiveCharts.Wpf;
 using System.Windows.Navigation;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 using ENTITIES;
+using System.Windows.Automation.Peers;
 
 namespace SERVICES
 {
@@ -274,6 +275,79 @@ namespace SERVICES
                                 }
                             }
                         }
+                    }
+                    result.Add(count);
+                }
+            }
+            return result;
+        }
+
+        public ChartValues<int> SoLuongSanPhamBan(List<string> labels, int Id_Product, int code)
+        {
+            var test = Id_Product;
+            var result = new ChartValues<int>();
+            var orders = order.DanhSachOrder();
+            var products = product.DanhSachProduct();
+            if (code == 0)
+            {
+                foreach (var item in labels)
+                {
+                    int count = 0;
+                    var query = orders.Where(s => (s.SanPham == Id_Product && ToolService.ConverDateToInt(s.NgayDonHang) == ToolService.ConvertStringDateToInt(item))).ToList();
+                    foreach(var i in query)
+                    {
+                        count += i.SoLuong;
+                    }
+                    result.Add(count);
+                }    
+            }
+            else if (code == 1)
+            {
+                foreach (var item in labels)
+                {
+                    string[] temp = item.Split('-');
+                    DateTime startDate = DateTime.Parse(temp[0]);
+                    DateTime endDate = DateTime.Parse(temp[1]);
+
+                    int count = 0;
+                    var query = orders.Where(s => (s.SanPham == Id_Product && ToolService.ConverDateToInt(s.NgayDonHang) >= ToolService.ConverDateToInt(startDate) && ToolService.ConverDateToInt(s.NgayDonHang) <= ToolService.ConverDateToInt(endDate))).ToList();
+                    foreach (var i in query)
+                    {
+                        count += i.SoLuong;
+                    }
+                    result.Add(count);
+                }
+            }
+            else if (code == 2)
+            {
+                foreach (var item in labels)
+                {
+                    string[] temp = item.Split('-');
+                    DateTime startDate = DateTime.Parse(temp[0]);
+                    DateTime endDate = DateTime.Parse(temp[1]);
+
+                    int count = 0;
+                    var query = orders.Where(s => (s.SanPham == Id_Product && ToolService.ConverDateToInt(s.NgayDonHang) >= ToolService.ConverDateToInt(startDate) && ToolService.ConverDateToInt(s.NgayDonHang) <= ToolService.ConverDateToInt(endDate))).ToList();
+                    foreach (var i in query)
+                    {
+                        count += i.SoLuong;
+                    }
+                    result.Add(count);
+                }
+            }
+            else if (code == 3)
+            {
+                foreach (var item in labels)
+                {
+                    string[] temp = item.Split('-');
+                    DateTime startDate = DateTime.Parse(temp[0]);
+                    DateTime endDate = DateTime.Parse(temp[1]);
+
+                    int count = 0;
+                    var query = orders.Where(s => (s.SanPham == Id_Product && ToolService.ConverDateToInt(s.NgayDonHang) >= ToolService.ConverDateToInt(startDate) && ToolService.ConverDateToInt(s.NgayDonHang) <= ToolService.ConverDateToInt(endDate))).ToList();
+                    foreach (var i in query)
+                    {
+                        count += i.SoLuong;
                     }
                     result.Add(count);
                 }
