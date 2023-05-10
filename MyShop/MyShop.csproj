@@ -10,16 +10,19 @@
   <ItemGroup>
     <None Remove="Data\Default\default-product-image.png" />
     <None Remove="Data\Icon\delete.png" />
+    <None Remove="Data\Icon\ico_backup.png" />
     <None Remove="Data\Icon\ico_category.png" />
     <None Remove="Data\Icon\ico_order.png" />
     <None Remove="Data\Icon\ico_product.jpg" />
     <None Remove="Data\Icon\ico_reportproduct.png" />
+    <None Remove="Data\Icon\ico_restore.png" />
     <None Remove="Data\Icon\ico_revenue.png" />
     <None Remove="Data\Icon\pencil.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Fluent.Ribbon" Version="9.0.4" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.53.0" />
     <PackageReference Include="LiveCharts.Wpf.Core" Version="0.9.8" />
   </ItemGroup>
 
@@ -31,10 +34,12 @@
   <ItemGroup>
     <Resource Include="Data\Default\default-product-image.png" />
     <Resource Include="Data\Icon\delete.png" />
+    <Resource Include="Data\Icon\ico_backup.png" />
     <Resource Include="Data\Icon\ico_category.png" />
     <Resource Include="Data\Icon\ico_order.png" />
     <Resource Include="Data\Icon\ico_product.jpg" />
     <Resource Include="Data\Icon\ico_reportproduct.png" />
+    <Resource Include="Data\Icon\ico_restore.png" />
     <Resource Include="Data\Icon\ico_revenue.png" />
     <Resource Include="Data\Icon\pencil.png" />
   </ItemGroup>
@@ -196,6 +201,10 @@
     <None Update="Data\VGA\9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Backup\" />
   </ItemGroup>
 
 </Project>

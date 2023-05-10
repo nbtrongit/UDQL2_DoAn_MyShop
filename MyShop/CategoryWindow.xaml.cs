@@ -71,11 +71,14 @@ namespace MyShop
 
         private void deleteMenu_Click(object sender, RoutedEventArgs e)
         {
-            var temp = CategorysListView.SelectedItem as Category;
-            if (categoryService.Xoa1Category(temp))
+            if (CategorysListView.SelectedItem != null)
             {
-                category.Remove(temp);
-            }    
+                var temp = CategorysListView.SelectedItem as Category;
+                if (categoryService.Xoa1Category(temp))
+                {
+                    category.Remove(temp);
+                }
+            }
         }
 
         private void addCategoryButton_Click(object sender, RoutedEventArgs e)
@@ -109,11 +112,14 @@ namespace MyShop
 
         private void deleteCategoryButton_Click(object sender, RoutedEventArgs e)
         {
-            var temp = CategorysListView.SelectedItem as Category;
-            if (categoryService.Xoa1Category(temp))
+            if(CategorysListView.SelectedItem!= null)
             {
-                category.Remove(temp);
-            }
+                var temp = CategorysListView.SelectedItem as Category;
+                if (categoryService.Xoa1Category(temp))
+                {
+                    category.Remove(temp);
+                }
+            }    
         }
 
         private void updateCategoryButton_Click(object sender, RoutedEventArgs e)

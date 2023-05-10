@@ -1,7 +1,11 @@
 ﻿using Fluent;
+using LiveCharts.Wpf;
+using Microsoft.Data.SqlClient;
+using Microsoft.Win32;
 using SERVICES;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +17,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Path = System.IO.Path;
 
 namespace MyShop
 {
@@ -44,7 +49,31 @@ namespace MyShop
 
         private void buttonBackup_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                string appPath = AppDomain.CurrentDomain.BaseDirectory;
+                string backupPath = Path.Combine(appPath, "Backup");
+                if (!Directory.Exists(backupPath))
+                {
+                    Directory.CreateDirectory(backupPath);
+                }
+                string backupFile = Path.Combine(backupPath, "MyShop.bak");
 
+                string conn = File.ReadAllText("Config.txt");
+
+                using (SqlConnection connection = new SqlConnection(conn))
+                {
+                    connection.Open();
+                    string query = "BACKUP DATABASE MyShop TO DISK= N'" + backupFile + "'";
+                    SqlCommand command = new SqlCommand(query, connection);
+                    command.ExecuteNonQuery();
+                }
+                MessageBox.Show("Database Backup thành công");
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
         }
 
         private void buttonCategory_Click(object sender, RoutedEventArgs e)
@@ -102,6 +131,38 @@ namespace MyShop
         {
             var screen = new ReportProductWindow();
             screen.ShowDialog();
+        }
+
+        private void buttonRestore_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string filePath = "";
+                var screen = new OpenFileDialog();
+                if (screen.ShowDialog() == true)
+                {
+                    filePath = screen.FileName;
+                }
+                string databaseName = "MyShop";
+
+                string sqlRestore = $"USE master RESTORE DATABASE {databaseName} FROM DISK='{filePath}' WITH REPLACE;";
+
+                string conn = File.ReadAllText("Config.txt");
+
+                using (SqlConnection sqlCon = new SqlConnection(conn))
+                {
+                    using (SqlCommand sqlCmd = new SqlCommand(sqlRestore, sqlCon))
+                    {
+                        sqlCon.Open();
+                        sqlCmd.ExecuteNonQuery();
+                        MessageBox.Show("Database Restore thành công");
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error");
+            }
         }
     }
 }

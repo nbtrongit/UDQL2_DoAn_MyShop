@@ -38,6 +38,8 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
+            <Button Margin="5" x:Name="buttonOutofStock" Width="80" Height="34" Content="Sắp hết hàng"
+                Click="buttonOutofStock_Click"/>
         </StackPanel>
         <Canvas DockPanel.Dock="Bottom" Height="70">
             <ComboBox SelectionChanged="pagingComboBox_SelectionChanged" Name ="pagingComboBox" Canvas.Left="545" Canvas.Top="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="130" Height="34" HorizontalAlignment="Center" VerticalAlignment="Top">

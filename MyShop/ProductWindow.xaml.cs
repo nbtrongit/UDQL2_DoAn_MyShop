@@ -39,6 +39,7 @@ namespace MyShop
         public int TotalItems { get => _totalItems; set => _totalItems = value; }
         public int MinPrice { get => _minPrice; set => _minPrice = value; }
         public int MaxPrice { get => _maxPrice; set => _maxPrice = value; }
+        private ObservableCollection<Product> outstock = null;
         public ProductWindow()
         {
             InitializeComponent();
@@ -277,6 +278,33 @@ namespace MyShop
             _updateDataSource();
             _updatePagingInfo();
             pagingComboBox.SelectedIndex = 0;
+        }
+
+        private void buttonOutofStock_Click(object sender, RoutedEventArgs e)
+        {
+            MinPrice = 0;
+            minTextBox.Text = "0";
+            MaxPrice = productService.MaxPriceProduct();
+            maxTextBox.Text = "" + MaxPrice;
+            Keyword = "";
+            keywordTextBox.Text = "";
+            _categoryId = 0;
+
+            outstock = new ObservableCollection<Product>(productService.SanPhamSapHetHang(-1, 5));
+            ProductsListView.ItemsSource = outstock;
+
+            TotalItems = productService.SanPhamSapHetHang(-1, 5).Count;
+
+            _updatePagingInfo();
+            pagingComboBox.SelectedIndex = 0;
+            if (RowsPerPage > products.Count)
+            {
+                rowsPerPageRun.Text = "" + products.Count;
+            }
+            else
+            {
+                rowsPerPageRun.Text = "" + RowsPerPage;
+            }
         }
     }
 }

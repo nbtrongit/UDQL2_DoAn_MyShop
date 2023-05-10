@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Automation.Peers;
+using System.Windows.Media;
 
 namespace SERVICES
 {
@@ -26,7 +27,7 @@ namespace SERVICES
             {
                 item.Ten = item.Ten.Trim();
             }    
-            return product.DanhSachProduct();
+            return ds;
         }
         public List<Product> DanhSachProductConHang()
         {
@@ -166,9 +167,18 @@ namespace SERVICES
 
         public List<Product> SanPhamSapHetHang(int num, int max)
         {
-            var ds = product.DanhSachProduct();
-            var query = ds.Where(item => item.SoLuong <= max).Take(num).ToList();
-            return query;
+            if(num == -1)
+            {
+                var ds = product.DanhSachProduct();
+                var query = ds.Where(item => item.SoLuong < max).ToList();
+                return query;
+            }
+            else
+            {
+                var ds = product.DanhSachProduct();
+                var query = ds.Where(item => item.SoLuong < max).Take(num).ToList();
+                return query;
+            }
         }
     }
 }

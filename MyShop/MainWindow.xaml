@@ -61,6 +61,22 @@
                     </Fluent:Button>
                 </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
+
+            <Fluent:RibbonTabItem Header="Database">
+                <Fluent:RibbonGroupBox>
+                    <Fluent:Button Name="buttonBackup" Click="buttonBackup_Click" FontWeight="Bold" Header="Backup">
+                        <Fluent:Button.Icon>
+                            <Image Source="Data/Icon/ico_backup.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
+                        </Fluent:Button.Icon>
+                    </Fluent:Button>
+
+                    <Fluent:Button Name="buttonRestore" Click="buttonRestore_Click" FontWeight="Bold" Header="Backup">
+                        <Fluent:Button.Icon>
+                            <Image Source="Data/Icon/ico_restore.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
+                        </Fluent:Button.Icon>
+                    </Fluent:Button>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
         </Fluent:Ribbon>
         <Label Content="Số đơn trong tuần" Canvas.Left="116" Canvas.Top="178" HorizontalAlignment="Center" VerticalAlignment="Top"/>
         <TextBlock x:Name="TextBlockSoLuongDonHangTrongTuan" Text="0" Width="86" Canvas.Left="248" Canvas.Top="182" HorizontalAlignment="Center" VerticalAlignment="Top"/>

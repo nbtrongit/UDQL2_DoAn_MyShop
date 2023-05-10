@@ -15,8 +15,10 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.5\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.5\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)grpc.tools\2.53.0\build\Grpc.Tools.props" Condition="Exists('$(NuGetPackageRoot)grpc.tools\2.53.0\build\Grpc.Tools.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Xaml_Behaviors_Wpf Condition=" '$(PkgMicrosoft_Xaml_Behaviors_Wpf)' == '' ">C:\Users\PC\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.31</PkgMicrosoft_Xaml_Behaviors_Wpf>
+    <PkgGrpc_Tools Condition=" '$(PkgGrpc_Tools)' == '' ">C:\Users\PC\.nuget\packages\grpc.tools\2.53.0</PkgGrpc_Tools>
   </PropertyGroup>
 </Project>

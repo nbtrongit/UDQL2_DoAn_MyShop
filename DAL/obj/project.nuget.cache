@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8COdwQ+Z5LWcwfPbvSdI8stAUiLoSRQB+PDt9wDUjEr24qDzM7kUtkvvF3VyGd4zUtlmerBLKMedaythpk7IAg==",
+  "dgSpecHash": "mGa7WJWIPfQka0gHL+/lWL9/9WZTB6xL5rexr2CTU9JOgUdK33USwap9Cvw3HeqOmF5pG3lS1VBlZFtX9QBBKQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 10\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 11 - xong hết (9.25đ)\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,1 +1,1 @@
-﻿Data Source=DESKTOP-922J4KT; User Id=sa;Password=123456; Initial Catalog=MyShop1; TrustServerCertificate=True
+﻿Data Source=DESKTOP-922J4KT; User Id=sa;Password=123456; Initial Catalog=MyShop; TrustServerCertificate=True
