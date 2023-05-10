@@ -9,9 +9,13 @@ namespace DAL
 {
     public class UserDAL
     {
+        private MyShopContext db = null;
+        public UserDAL() 
+        {
+            db = new MyShopContext();
+        }
         public List<User> DanhSachUser()
         {
-            var db = new MyShopContext();
             return db.Users.ToList();
         }
     }

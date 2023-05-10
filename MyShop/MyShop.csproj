@@ -8,8 +8,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\Icon\delete.png" />
+    <None Remove="Data\Icon\pencil.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ENTITIES\ENTITIES.csproj" />
     <ProjectReference Include="..\SERVICES\SERVICES.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Data\Icon\delete.png" />
+    <Resource Include="Data\Icon\pencil.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -166,10 +176,6 @@
     <None Update="Data\VGA\9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\Icon\" />
   </ItemGroup>
 
 </Project>

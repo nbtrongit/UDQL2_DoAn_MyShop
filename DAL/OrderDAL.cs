@@ -9,9 +9,13 @@ namespace DAL
 {
     public class OrderDAL
     {
+        private MyShopContext db = null;
+        public OrderDAL()
+        {
+            db = new MyShopContext();
+        }
         public List<Order> DanhSachOrder()
         {
-            var db = new MyShopContext();
             return db.Orders.ToList();
         }
     }

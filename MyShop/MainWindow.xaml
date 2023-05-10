@@ -8,7 +8,11 @@
         Title="Main" Height="480" Width="640" ResizeMode="NoResize">
     <TabControl>
         <TabItem Header="Dashboard" FontSize="20"></TabItem>
-        <TabItem Header="Chức năng" FontSize="20"></TabItem>
+        <TabItem Header="Chức năng" FontSize="20">
+            <Canvas>
+                <Button Name="buttonCategory" Click="buttonCategory_Click" Width="100" Height="35" Content="Category" Canvas.Left="87" Canvas.Top="107" />
+            </Canvas>
+        </TabItem>
         <TabItem Header="Dữ liệu" FontSize="20">
             <Canvas>
                 <TextBlock Text="Import dữ liệu ban đầu từ file Access" HorizontalAlignment="Left" VerticalAlignment="Center" Width="386" Canvas.Left="189" Canvas.Top="81"></TextBlock>

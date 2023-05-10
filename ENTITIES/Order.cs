@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace ENTITIES;
 
-public partial class Order
+public partial class Order : INotifyPropertyChanged, ICloneable
 {
     public int Id { get; set; }
 
@@ -20,4 +21,10 @@ public partial class Order
     public string? TriGia { get; set; }
 
     public virtual Product SanPhamNavigation { get; set; } = null!;
+    public object Clone()
+    {
+        return MemberwiseClone();
+    }
+
+    public event PropertyChangedEventHandler? PropertyChanged;
 }

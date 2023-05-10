@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace ENTITIES;
 
-public partial class Product
+public partial class Product : INotifyPropertyChanged, ICloneable
 {
     public int Id { get; set; }
 
@@ -24,4 +25,10 @@ public partial class Product
     public virtual Category? LoaiSanPhamNavigation { get; set; }
 
     public virtual ICollection<Order> Orders { get; } = new List<Order>();
+    public object Clone()
+    {
+        return MemberwiseClone();
+    }
+
+    public event PropertyChangedEventHandler? PropertyChanged;
 }

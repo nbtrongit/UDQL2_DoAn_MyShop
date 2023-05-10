@@ -33,13 +33,19 @@ namespace MyShop
             }
             else
             {
-                MessageBox.Show("Import dữ liệu không thành công", "Lỗi", MessageBoxButton.OK);
+                MessageBox.Show("Import lỗi (database không trống/lỗi khác)", "Lỗi", MessageBoxButton.OK);
             }
         }
 
         private void buttonBackup_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void buttonCategory_Click(object sender, RoutedEventArgs e)
+        {
+            var screen = new CategoryWindow();
+            screen.ShowDialog();
         }
     }
 }

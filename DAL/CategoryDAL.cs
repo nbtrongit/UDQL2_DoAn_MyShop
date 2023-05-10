@@ -9,23 +9,35 @@ namespace DAL
 {
     public class CategoryDAL
     {
+        private MyShopContext db = null;
+        public CategoryDAL()
+        {
+            db = new MyShopContext();
+        }
         public List<Category> DanhSachCategory()
         {
-            var db = new MyShopContext();
             return db.Categories.ToList();
         }
 
         public void ThemCategory(Category category)
         {
-            var db = new MyShopContext();
             db.Categories.Add(category);
             db.SaveChanges();
         }
-
+        public void Xoa1Category(Category del)
+        {
+            db.Categories.Remove(del);
+            db.SaveChanges();
+        }
         public void XoaCategory()
         {
-            var db = new MyShopContext();
             db.Categories.RemoveRange(db.Categories);
+            db.SaveChanges();
+        }
+        public void SuaCategory(Category up, string newCategory) 
+        {
+            var item = db.Categories.FirstOrDefault(c => c.Id == up.Id);
+            item.Ten = newCategory;
             db.SaveChanges();
         }
     }
