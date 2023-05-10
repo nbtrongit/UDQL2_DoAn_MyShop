@@ -6,8 +6,18 @@
                      xmlns:local="clr-namespace:MyShop"
                      xmlns:Fluent="clr-namespace:Fluent;assembly=Fluent"
                      mc:Ignorable="d"
-                     Title="Main" Height="480" Width="640" ResizeMode="NoResize">
+                     Title="Main" Height="480" Width="640" ResizeMode="NoResize" Loaded="RibbonWindow_Loaded">
+    <Window.Resources>
+        <local:RelativeToAbsoluteConverter x:Key="absolute"/>
+        <local:NumberToCurrencyConverter x:Key="currency"/>
+    </Window.Resources>
     <Canvas>
+        <Label HorizontalContentAlignment="Center" FontSize="26" FontWeight="Bold" Content="Dashboard" HorizontalAlignment="Left" VerticalAlignment="Top" Width="437" Canvas.Left="116" Canvas.Top="101"></Label>
+        <Label Content="Số sản phẩm đang bán" Canvas.Left="116" Canvas.Top="151"></Label>
+        <TextBlock Name="TextBlockSoLuongSanPham" Text="0" HorizontalAlignment="Left" VerticalAlignment="Center" Width="86" Canvas.Left="248" Canvas.Top="155"></TextBlock>
+
+
+
         <Fluent:Ribbon HorizontalAlignment="Center" Height="96">
             <Fluent:Ribbon.Menu>
                 <Fluent:Backstage Header="Main">
@@ -36,8 +46,43 @@
                     </Fluent:Button>
                 </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
-            <Fluent:RibbonTabItem Header="Report">
+                
+            <Fluent:RibbonTabItem Header="Báo Cáo">
+                <Fluent:RibbonGroupBox>
+                    <Fluent:Button Name="buttonRevenueProfit" Click="buttonRevenueProfit_Click" FontWeight="Bold" Header="RevenueProfit">
+                        <Fluent:Button.Icon>
+                            <Image Source="Data/Icon/ico_revenue.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
+                        </Fluent:Button.Icon>
+                    </Fluent:Button>
+                </Fluent:RibbonGroupBox>
             </Fluent:RibbonTabItem>
         </Fluent:Ribbon>
+        <Label Content="Số đơn trong tuần" Canvas.Left="116" Canvas.Top="178" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock x:Name="TextBlockSoLuongDonHangTrongTuan" Text="0" Width="86" Canvas.Left="248" Canvas.Top="182" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <Label Content="Sản phẩm sắp hết hàng" Canvas.Left="116" Canvas.Top="209" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Padding="10, 10, 0, 0" Name="ProductsListView" Height="182" Width="412" Canvas.Left="114" Canvas.Top="240">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical" Width="128" Height="128">
+                        <Image RenderOptions.BitmapScalingMode="HighQuality" 
+                               Source="{Binding HinhAnh, Converter={StaticResource absolute}}" Margin="0, 0, 5, 0" 
+                               Width="60" Height="60"/>
+                        <TextBlock Text="{Binding Ten}" Foreground="Red" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding SanXuat}" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding Gia, Converter={StaticResource currency}}" FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <TextBlock HorizontalAlignment="Center">
+                            <Run Text="Số Lượng: "></Run>
+                            <Run Text="{Binding SoLuong}"></Run>
+                        </TextBlock>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel />
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+        </ListView>
     </Canvas>
 </Fluent:RibbonWindow>

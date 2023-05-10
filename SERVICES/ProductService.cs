@@ -152,5 +152,23 @@ namespace SERVICES
             }
             return null;
         }
+
+        public int TongSoSp()
+        {
+            int count = 0;
+            var ds = product.DanhSachProduct();
+            foreach(var item in ds)
+            {
+                count += item.SoLuong;
+            }
+            return count;
+        }
+
+        public List<Product> SanPhamSapHetHang(int num, int max)
+        {
+            var ds = product.DanhSachProduct();
+            var query = ds.Where(item => item.SoLuong <= max).Take(num).ToList();
+            return query;
+        }
     }
 }

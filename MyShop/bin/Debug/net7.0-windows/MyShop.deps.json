@@ -10,6 +10,7 @@
         "dependencies": {
           "ENTITIES": "1.0.0",
           "Fluent.Ribbon": "9.0.4",
+          "LiveCharts.Wpf.Core": "0.9.8",
           "SERVICES": "1.0.0"
         },
         "runtime": {
@@ -74,6 +75,25 @@
         }
       },
       "Fody/6.6.4": {},
+      "LiveCharts.Core/0.9.8": {
+        "runtime": {
+          "lib/netstandard2.0/LiveCharts.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
+      "LiveCharts.Wpf.Core/0.9.8": {
+        "dependencies": {
+          "LiveCharts.Core": "0.9.8"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/LiveCharts.Wpf.dll": {
+            "assemblyVersion": "0.9.7.0",
+            "fileVersion": "0.9.7.0"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -619,6 +639,7 @@
         "dependencies": {
           "DAL": "1.0.0",
           "ENTITIES": "1.0.0",
+          "LiveCharts.Wpf.Core": "0.9.8",
           "System.Data.OleDb": "7.0.0"
         },
         "runtime": {
@@ -667,6 +688,20 @@
       "sha512": "sha512-vLZS+oa+ndUHYPlx/8n9bBTT3dHkCF0riml4paKq4D663+cZd47x1uagQo32D/gKFZ/sfmV1oqKaLmH0elxq4A==",
       "path": "fody/6.6.4",
       "hashPath": "fody.6.6.4.nupkg.sha512"
+    },
+    "LiveCharts.Core/0.9.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-USb2TBOeER19X0ar5Zgki1ezjrSXBOmUoz3IqzTeksDm6hoaLFqs3iW9+wjHFuWNQGy9lLcVh2YIhhxVIg+zNQ==",
+      "path": "livecharts.core/0.9.8",
+      "hashPath": "livecharts.core.0.9.8.nupkg.sha512"
+    },
+    "LiveCharts.Wpf.Core/0.9.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jMBdknuG3EOMKA0NaqqwMjhsZpRAzd0UqP0SlwXIBJ+ZoJg5TF9C4rDdKqInEs+RycYmIwmrZWvmfDxsM5MMJw==",
+      "path": "livecharts.wpf.core/0.9.8",
+      "hashPath": "livecharts.wpf.core.0.9.8.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "type": "package",

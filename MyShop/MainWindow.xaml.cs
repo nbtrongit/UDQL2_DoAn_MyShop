@@ -21,9 +21,13 @@ namespace MyShop
     /// </summary>
     public partial class MainWindow : RibbonWindow
     {
+        private ProductService productService;
+        private OrderService orderService;
         public MainWindow()
         {
             InitializeComponent();
+            productService = new ProductService();
+            orderService = new OrderService();
         }
 
         private void buttonImport_Click(object sender, RoutedEventArgs e)
@@ -81,19 +85,17 @@ namespace MyShop
             }
         }
 
-        private void buttonCategory_Click_1(object sender, RoutedEventArgs e)
+        private void RibbonWindow_Loaded(object sender, RoutedEventArgs e)
         {
-
+            TextBlockSoLuongSanPham.Text = "" + productService.TongSoSp();
+            TextBlockSoLuongDonHangTrongTuan.Text = "" + orderService.TongSoDonHangTuan();
+            ProductsListView.ItemsSource = productService.SanPhamSapHetHang(5,5);
         }
 
-        private void buttonProduct_Click_1(object sender, RoutedEventArgs e)
+        private void buttonRevenueProfit_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void buttonOrder_Click_1(object sender, RoutedEventArgs e)
-        {
-
+            var screen = new ReportRevenueProfitWindow();
+            screen.ShowDialog();
         }
     }
 }

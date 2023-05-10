@@ -180,5 +180,17 @@ namespace SERVICES
                 }
             }
         }
+        public int TongSoDonHangTuan()
+        {
+            DateTime date = DateTime.Now;
+            DayOfWeek day = date.DayOfWeek;
+            int days = day - DayOfWeek.Monday;
+            DateTime monday = date.AddDays(-days);
+            DateTime sunday = monday.AddDays(6);
+
+            var ds = order.DanhSachOrder();
+            return ds.Where(item => (ToolService.ConverDateToInt(item.NgayDonHang) >= ToolService.ConverDateToInt(monday)) && (ToolService.ConverDateToInt(item.NgayDonHang) <= ToolService.ConverDateToInt(sunday)) ).Count();
+            
+        }
     }
 }

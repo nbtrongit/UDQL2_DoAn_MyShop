@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\PC\Desktop\working\UDQL2_DOAN - 8\MyShop\obj\Debug\net7.0-windows\
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 9\MyShop\obj\Debug\net7.0-windows\
 MyShop
 none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
-C:\Users\PC\Desktop\working\UDQL2_DOAN - 8\MyShop\App.xaml
-13-1711379409
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 9\MyShop\App.xaml
+141357592205
 
-17-1766269147
-243321554887
-addOrderWindow.xaml;addProductWindow.xaml;CategoryWindow.xaml;detailOrderWindow.xaml;detailProductWindow.xaml;editDetailOrderWindow.xaml;editOrderWindow.xaml;editProductWindow.xaml;LoginWindow.xaml;MainWindow.xaml;OrderMainWindow.xaml;ProductWindow.xaml;_editDetailOrderWindow.xaml;
+18-2078477714
+245348764977
+addOrderWindow.xaml;addProductWindow.xaml;CategoryWindow.xaml;detailOrderWindow.xaml;detailProductWindow.xaml;editDetailOrderWindow.xaml;editOrderWindow.xaml;editProductWindow.xaml;LoginWindow.xaml;MainWindow.xaml;OrderMainWindow.xaml;ProductWindow.xaml;ReportRevenueProfitWindow.xaml;_editDetailOrderWindow.xaml;
 
 False
 

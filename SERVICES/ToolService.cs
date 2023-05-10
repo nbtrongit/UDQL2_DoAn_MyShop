@@ -194,5 +194,11 @@ namespace SERVICES
         {
             return date.Year * 1000 + date.Month * 100 + date.Day;
         }
+
+        public static int ConvertStringDateToInt(string date)
+        {
+            DateTime temp = ConvertStringToDate(date);
+            return temp.Year * 1000 + temp.Month * 100 + temp.Day;
+        }
     }
 }
