@@ -26,3 +26,17 @@ C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\ENTITIES\obj\Debug\net7.0-win
 C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.pdb
 C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.genruntimeconfig.cache
 C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 2\ENTITIES\obj\Debug\net7.0-windows\ref\ENTITIES.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\bin\Debug\net7.0-windows\ENTITIES.deps.json
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\bin\Debug\net7.0-windows\ENTITIES.runtimeconfig.json
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\bin\Debug\net7.0-windows\ENTITIES.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\bin\Debug\net7.0-windows\ENTITIES.pdb
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.AssemblyInfo.cs
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\refint\ENTITIES.dll
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.pdb
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\ENTITIES.genruntimeconfig.cache
+C:\Users\PC\Desktop\Quy trình làm\UDQL2_DOAN - 3\ENTITIES\obj\Debug\net7.0-windows\ref\ENTITIES.dll
