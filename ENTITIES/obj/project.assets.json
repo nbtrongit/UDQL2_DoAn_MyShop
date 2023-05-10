@@ -3510,11 +3510,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\working1\\UDQL2_DOAN - 5\\ENTITIES\\ENTITIES.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 6\\ENTITIES\\ENTITIES.csproj",
       "projectName": "ENTITIES",
-      "projectPath": "C:\\Users\\PC\\Desktop\\working1\\UDQL2_DOAN - 5\\ENTITIES\\ENTITIES.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 6\\ENTITIES\\ENTITIES.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\working1\\UDQL2_DOAN - 5\\ENTITIES\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 6\\ENTITIES\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"

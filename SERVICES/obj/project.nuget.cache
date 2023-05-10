@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5V2ReZFzXOJZW/pcUMR2Zcyg4OoYLfkl0sFbrcobG5Ou3kwilazTJFh1kUAA6WWylcmgMNYaYj/xh+NuMXBP+w==",
+  "dgSpecHash": "L2oij2Z+9gPMYz2d6GabMNroE6R1M+Ra1U2DNuxDFAZaYzhVEdzJGqMXl7NySvPTc+2k1/UDWqxC4qxUjZgBLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\working1\\UDQL2_DOAN - 5\\SERVICES\\SERVICES.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 6\\SERVICES\\SERVICES.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

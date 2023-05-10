@@ -11,7 +11,7 @@
         <local:NumberToCurrencyConverter x:Key="currency"/>
     </Window.Resources>
 
-    <DockPanel Name="Docktesst" LastChildFill="True">
+    <DockPanel LastChildFill="True">
         <StackPanel Orientation="Horizontal" Height="50" DockPanel.Dock="Top">
             <Button Margin="5" x:Name="addProductButton" Content="Add" Width="80" Height="35" 
                 Click="addProductButton_Click" />
@@ -21,13 +21,26 @@
                 Click="updateProductButton_Click"/>
             <Button Margin="5" x:Name="updateRowPageButton" Width="80" Height="35" Content="Update Row"
                 Click="updateRowPageButton_Click"/>
-            <TextBox Margin="5" Name="rowsPerPageTextBox" Text="{Binding RowsPerPage}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" d:Text="6" Width="35" Height="35"/>
+            <TextBox Margin="0,5,5,5" Name="rowsPerPageTextBox" Text="{Binding RowsPerPage}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="35" Height="35"/>
             <Button Margin="5" x:Name="searchButton" Width="80" Height="34" Content="Search"
                 Click="searchButton_Click"/>
-            <TextBox x:Name="keywordTextBox" Text="{Binding Keyword}" VerticalContentAlignment="Center" Width="150" Height="34"/>
+            <TextBox Margin="0,5,5,5" x:Name="keywordTextBox" Text="{Binding Keyword}" VerticalContentAlignment="Center" Width="150" Height="34"/>
+            <Button Margin="5" x:Name="filterPriceButton" Width="80" Height="34" Content="Price"
+                Click="filterPriceButton_Click"/>
+            <TextBox x:Name="minTextBox" Text="{Binding MinPrice}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="71" Height="34"/>
+            <TextBlock Text="-" VerticalAlignment="Center"/>
+            <TextBox x:Name="maxTextBox" Text="{Binding MaxPrice}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="70" Height="34"/>
+
+            <ComboBox Margin="10,0,0,0" x:Name="comboBoxCategories" SelectionChanged="comboBoxCategories_SelectionChanged"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="34" Width="154">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock><Run Text="{Binding Ten}"/></TextBlock>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
         </StackPanel>
         <Canvas DockPanel.Dock="Bottom" Height="70">
-            <ComboBox SelectionChanged="pagingComboBox_SelectionChanged" Name ="pagingComboBox" Canvas.Left="545" Canvas.Top="7" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="130" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <ComboBox SelectionChanged="pagingComboBox_SelectionChanged" Name ="pagingComboBox" Canvas.Left="545" Canvas.Top="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="130" Height="34" HorizontalAlignment="Center" VerticalAlignment="Top">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock VerticalAlignment="Stretch">
@@ -36,8 +49,8 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-            <Button Name="prevButton" Width="80" Height="34" Click="prevButton_Click" Content="Prev" Canvas.Left="460" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Button Name="nextButton" Width="80" Height="35" Click="nextButton_Click" Content="Next" Canvas.Left="680" Canvas.Top="8" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <Button Name="prevButton" Width="80" Height="34" Click="prevButton_Click" Content="Prev" Canvas.Left="460" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button Name="nextButton" Width="80" Height="34" Click="nextButton_Click" Content="Next" Canvas.Left="680" Canvas.Top="10" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <TextBlock Canvas.Left="545" Canvas.Top="47" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Run Text="Đang hiển thị "/>
                 <Run Name="rowsPerPageRun" Text="{Binding RowsPerPage}"/>
