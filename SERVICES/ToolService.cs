@@ -5,9 +5,11 @@ using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -142,6 +144,40 @@ namespace SERVICES
                 category.XoaCategory();
                 return false;
             }
+        }
+
+        public static void CopyFile(string dataFolder, FileInfo _selectedImage)
+        {
+            var folder = AppDomain.CurrentDomain.BaseDirectory;
+            string newPath = $"{folder}Data/{dataFolder}/{_selectedImage.Name}";
+            //kiểm tra folder Data/folder đã tồn tại chưa, nếu chưa thì tạo mới
+            if (!Directory.Exists($"{folder}Data/{dataFolder}/"))
+            {
+                Directory.CreateDirectory($"{folder}Data/{dataFolder}/");
+            }
+
+            if (!File.Exists(newPath))
+            {
+                File.Copy(_selectedImage.FullName, newPath);
+            }
+        }
+
+        #region Regex
+        //int number >= 0
+        public static bool KiemTraSoNguyen(string num)
+        {
+            return Regex.IsMatch(num, "^(0|[1-9][0-9]*)$");
+        }
+        #endregion
+
+        public static string StringFolder(string STR, string FirstString, string LastString)
+        {
+            string FinalString;
+            int Pos1 = STR.IndexOf(FirstString) + FirstString.Length;
+            int Pos2 = STR.IndexOf(LastString, Pos1);
+            FinalString = STR.Substring(Pos1, Pos2 - Pos1);
+            return FinalString;
+
         }
     }
 }

@@ -11,6 +11,7 @@
         <TabItem Header="Chức năng" FontSize="20">
             <Canvas>
                 <Button Name="buttonCategory" Click="buttonCategory_Click" Width="100" Height="35" Content="Category" Canvas.Left="87" Canvas.Top="107" />
+                <Button Name="buttonProduct" Click="buttonProduct_Click" Width="100" Height="35" Content="Product" Canvas.Left="217" Canvas.Top="107" HorizontalAlignment="Left" VerticalAlignment="Center" />
             </Canvas>
         </TabItem>
         <TabItem Header="Dữ liệu" FontSize="20">

@@ -77,7 +77,7 @@ namespace MyShop {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/MyShop;component/addcategorywindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/MyShop;V1.0.0.0;component/addcategorywindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\addCategoryWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\Default\default-product-image.png" />
     <None Remove="Data\Icon\delete.png" />
     <None Remove="Data\Icon\pencil.png" />
   </ItemGroup>
@@ -18,12 +19,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Data\Default\default-product-image.png" />
     <Resource Include="Data\Icon\delete.png" />
     <Resource Include="Data\Icon\pencil.png" />
   </ItemGroup>
 
   <ItemGroup>
     <None Update="Config.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\Default\default-product-image - %28none%29.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Data\Laptop\1.png">

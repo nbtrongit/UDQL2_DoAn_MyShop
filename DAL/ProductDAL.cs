@@ -23,5 +23,15 @@ namespace DAL
             db.Products.Add(product);
             db.SaveChanges();
         }
+        public void XoaProduct(Product product)
+        {
+            db.Products.Remove(product);
+            db.SaveChanges();
+        }
+        public void SuaProduct(Product product)
+        {
+            db.Products.Update(product);
+            db.SaveChanges();
+        }
     }
 }

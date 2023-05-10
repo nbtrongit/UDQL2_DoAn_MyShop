@@ -1,0 +1,22 @@
+﻿<Window x:Class="MyShop.detailProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyShop"
+        mc:Ignorable="d"
+        Title="Detail" Height="480" Width="640" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:RelativeToAbsoluteConverter x:Key="absolute"/>
+        <local:NumberToCurrencyConverter x:Key="currency"/>
+    </Window.Resources>
+
+    <Canvas>
+        <Image Source="{Binding HinhAnh, Converter={StaticResource absolute}}" Height="254" Width="268"/>
+        <Label Width="180" Height="45" Foreground="Red" FontWeight="Bold" FontSize="26" Content="{Binding Ten}" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Canvas.Left="48" VerticalAlignment="Center" Canvas.Top="259"/>
+        <Label Width="180" Height="45" FontWeight="Bold" FontSize="26" Content="{Binding Gia, Converter={StaticResource currency}}" HorizontalContentAlignment="Center" Canvas.Left="48" Canvas.Top="309" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Width="180" Height="45" FontSize="26" Content="{Binding SanXuat}" HorizontalContentAlignment="Center" Canvas.Left="48" Canvas.Top="359" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Label Height="45" FontSize="20" FontWeight="Bold" Content="Thông tin chi tiết" Canvas.Left="320" Canvas.Top="2" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBox TextWrapping="Wrap" IsReadOnly="True" FontSize="20" Text="{Binding MoTa}" Height="279" Width="320" Canvas.Left="320" Canvas.Top="52"/>
+    </Canvas>
+</Window>

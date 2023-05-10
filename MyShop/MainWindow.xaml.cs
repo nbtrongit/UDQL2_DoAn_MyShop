@@ -47,5 +47,11 @@ namespace MyShop
             var screen = new CategoryWindow();
             screen.ShowDialog();
         }
+
+        private void buttonProduct_Click(object sender, RoutedEventArgs e)
+        {
+            var screen = new ProductWindow();
+            screen.ShowDialog();
+        }
     }
 }
