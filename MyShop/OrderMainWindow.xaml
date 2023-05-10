@@ -1,0 +1,94 @@
+﻿<Window x:Class="MyShop.OrderMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyShop"
+        mc:Ignorable="d"
+        Title="OrderMainWindow" Height="720" Width="1280" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Window.Resources>
+        <local:RelativeToAbsoluteConverter x:Key="absolute"/>
+        <local:NumberToCurrencyConverter x:Key="currency"/>
+    </Window.Resources>
+
+    <DockPanel LastChildFill="True">
+        <StackPanel Orientation="Horizontal" Height="50" DockPanel.Dock="Top">
+            <Button Margin="5" x:Name="buttonAddOrder" Content="Add" Width="80" Height="35" 
+                Click="buttonAddOrder_Click" />
+            <Button Margin="5"  x:Name="buttonDeleteOrder" Content="Delete" Width="80" Height="35" 
+                Click="buttonDeleteOrder_Click"/>
+            <Button Margin="5"  x:Name="buttonUpdateOrder" Width="80" Height="35" Content="Update"
+                Click="buttonUpdateOrder_Click"/>
+            <Button Margin="5" x:Name="buttonFilterDate" Width="80" Height="34" Content="Date"
+                Click="buttonFilterDate_Click"/>
+            <TextBox x:Name="textBoxFirstDate" Text="dd/mm/yyyy" Foreground="Gray" MouseEnter="textBoxFirstDate_MouseEnter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="80" Height="34"/>
+            <TextBlock Text="-" VerticalAlignment="Center"/>
+            <TextBox x:Name="textBoxLastDate" Text="dd/mm/yyyy" Foreground="Gray" MouseEnter="textBoxLastDate_MouseEnter" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="80" Height="34"/>
+        </StackPanel>
+        <Canvas DockPanel.Dock="Top" Height="50" Margin="0,5,0,5">
+            <TextBox Margin="5,0,0,0" Name="textBoxNewOrder" Visibility="Hidden" MouseEnter="textBoxNewOrder_MouseEnter" Foreground="Gray" Height="50" Width="175" Text="Nhập mã đơn hàng" FontSize="15" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Canvas>
+        <Canvas DockPanel.Dock="Bottom" Height="70">
+            <ComboBox SelectionChanged="pagingComboBox_SelectionChanged" Name ="pagingComboBox" Canvas.Left="545" Canvas.Top="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="130" Height="34" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock VerticalAlignment="Stretch">
+                        <Run Text="{Binding Item1, Mode=OneTime}"/> / <Run Text="{Binding Item2, Mode=OneTime}"/>
+                        </TextBlock>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Button Name="buttonPrev" Width="80" Height="34" Click="buttonPrev_Click" Content="Prev" Canvas.Left="460" Canvas.Top="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button Name="buttonNext" Width="80" Height="34" Click="buttonNext_Click" Content="Next" Canvas.Left="680" Canvas.Top="20" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+        <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" Padding="10, 10, 0, 0" Name="OrdersListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical" Width="140" Height="80">
+                        <TextBlock Text="{Binding MaDonHang}" Foreground="Red" HorizontalAlignment="Center"/>
+                        <TextBlock FontWeight="Bold" HorizontalAlignment="Center">
+                            <Run Text="Số Lượng: "></Run>
+                            <Run Text="{Binding SoLuong}"></Run>
+                        </TextBlock>
+                        <TextBlock FontWeight="Bold" HorizontalAlignment="Center">
+                            <Run Text="Trị Giá: "></Run>
+                            <Run Text="{Binding TriGia, Converter={StaticResource currency}}"></Run>
+                        </TextBlock>
+                        <TextBlock Text="{Binding NgayDonHang, StringFormat='{}{0:dd/MM/yyyy}'}" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel />
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+
+            <ListView.Resources>
+                <ContextMenu x:Key="listViewContextMenu">
+                    <MenuItem Header="Delete" Click="deleteMenu_Click">
+                        <MenuItem.Icon>
+                            <Image RenderOptions.BitmapScalingMode="HighQuality" Source="Data/Icon/delete.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem  Header="Edit" Click="editMenu_Click">
+                        <MenuItem.Icon>
+                            <Image RenderOptions.BitmapScalingMode="HighQuality" Source="Data/Icon/pencil.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </ContextMenu>
+            </ListView.Resources>
+
+            <ListView.ItemContainerStyle>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <Setter Property="ContextMenu" 
+                            Value="{StaticResource listViewContextMenu}"/>
+                    <EventSetter Event="MouseDoubleClick" 
+                                 Handler="listViewItem_DoubleClick"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+        </ListView>
+    </DockPanel>
+</Window>

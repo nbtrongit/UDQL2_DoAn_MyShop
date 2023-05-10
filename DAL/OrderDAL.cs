@@ -18,5 +18,28 @@ namespace DAL
         {
             return db.Orders.ToList();
         }
+        public void ThemOrder(Order newO)
+        {
+            db.Orders.Add(newO);
+            db.SaveChanges();
+        }
+        public void XoaOrder(List<Order> del)
+        {
+            foreach(var item in del)
+            {
+                db.Orders.Remove(item);
+            }
+            db.SaveChanges();
+        }
+        public void XoaMotOrder(Order del)
+        {
+            db.Orders.Remove(del);
+            db.SaveChanges();
+        }
+        public void SuaOrder(Order up)
+        {
+            db.Orders.Update(up);
+            db.SaveChanges();
+        }
     }
 }

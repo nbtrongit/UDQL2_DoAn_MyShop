@@ -168,7 +168,17 @@ namespace SERVICES
         {
             return Regex.IsMatch(num, "^(0|[1-9][0-9]*)$");
         }
+
+        public static bool KiemTraDate(string date)
+        {
+            return Regex.IsMatch(date, "^(?:(?:31(\\/)(?:0?[13578]|1[02]))\\1|(?:(?:29|30)(\\/)(?:0?[1,3-9]|1[0-2])\\2))(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$|^(?:29(\\/|-|\\.)0?2\\3(?:(?:(?:1[6-9]|[2-9]\\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\\d|2[0-8])(\\/)(?:(?:0?[1-9])|(?:1[0-2]))\\4(?:(?:1[6-9]|[2-9]\\d)?\\d{2})$");
+        }
         #endregion
+
+        public static DateTime ConvertStringToDate(string date)
+        {
+            return DateTime.ParseExact(date, new[] { "d/MM/yyyy", "d/MM/yy", "d/M/yyyy", "d/M/yy" }, null);
+        }
 
         public static string StringFolder(string STR, string FirstString, string LastString)
         {
@@ -178,6 +188,11 @@ namespace SERVICES
             FinalString = STR.Substring(Pos1, Pos2 - Pos1);
             return FinalString;
 
+        }
+
+        public static int ConverDateToInt(DateTime date) 
+        {
+            return date.Year * 1000 + date.Month * 100 + date.Day;
         }
     }
 }

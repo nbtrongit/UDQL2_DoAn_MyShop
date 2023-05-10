@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n3R5R7fY/lmUlBhKt5Hi+6AydTbkA3Cf4BdUa2nm5VY1+f8TOg5MAMh15VmVHQB1gCRTOCXNu1yVyDS0icDQKA==",
+  "dgSpecHash": "fqGzQMKVZhrKWFgPE9jCybmtoj2tqtPheaXNTtHJpneq0eWeEcjsdO9/XSDzZcr90Hs6ggCvMu7dq2YmynZjEg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 6\\ENTITIES\\ENTITIES.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 7\\ENTITIES\\ENTITIES.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

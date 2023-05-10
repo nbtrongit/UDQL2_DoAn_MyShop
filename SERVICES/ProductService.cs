@@ -6,6 +6,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Automation.Peers;
 
 namespace SERVICES
 {
@@ -26,6 +27,16 @@ namespace SERVICES
                 item.Ten = item.Ten.Trim();
             }    
             return product.DanhSachProduct();
+        }
+        public List<Product> DanhSachProductConHang()
+        {
+            var ds = product.DanhSachProduct();
+            foreach (var item in ds)
+            {
+                item.Ten = item.Ten.Trim();
+            }
+
+            return ds.Where(x => x.SoLuong > 0).ToList(); ;
         }
         public bool ThemProduct(Product newP)
         {
@@ -102,6 +113,44 @@ namespace SERVICES
                     .ToList();
                 return new Tuple<ObservableCollection<Product>, int>(new ObservableCollection<Product>(result), query.Count());
             }
+        }
+
+        public List<Product> GetProductByMaDonHang (string madonhang)
+        {
+            var orders = order.DanhSachOrder();
+            var products = product.DanhSachProduct();
+
+            foreach(var item in products)
+            {
+                item.SoLuong = 0;
+            }
+
+            var result = orders.Where(x => x.MaDonHang == madonhang)
+                .GroupBy(x => x.SanPham)
+                .Select(g => new Product
+                {
+                    Id = g.Key,
+                    Ten = products.First(x => x.Id == g.Key).Ten,
+                    Gia = products.First(x => x.Id == g.Key).Gia,
+                    HinhAnh = products.First(x => x.Id == g.Key).HinhAnh,
+                    SanXuat = products.First(x => x.Id == g.Key).SanXuat,
+                    SoLuong = g.Sum(x => x.SoLuong)
+                })
+                .ToList();
+            return result;
+        }
+
+        public Product ProductById(int Id)
+        {
+            var ds = product.DanhSachProduct();
+            foreach(var item in ds)
+            {
+                if (item.Id == Id)
+                {
+                    return item!;
+                }    
+            }
+            return null;
         }
     }
 }

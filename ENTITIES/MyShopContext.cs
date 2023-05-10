@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
 using System.IO;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Protocols;
 
 namespace ENTITIES;
 
@@ -47,9 +48,6 @@ public partial class MyShopContext : DbContext
 
             entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.NgayDonHang).HasColumnType("date");
-            entity.Property(e => e.TriGia)
-                .HasMaxLength(10)
-                .IsFixedLength();
 
             entity.HasOne(d => d.SanPhamNavigation).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.SanPham)

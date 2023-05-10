@@ -7,13 +7,25 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="addOrderWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="addProductWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="CategoryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="detailOrderWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="detailProductWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="editDetailOrderWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="editOrderWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="editProductWindow.xaml.cs">
@@ -25,18 +37,36 @@
     <Compile Update="MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="OrderMainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ProductWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="_editDetailOrderWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="addOrderWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="addProductWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CategoryWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="detailOrderWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="detailProductWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="editDetailOrderWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="editOrderWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="editProductWindow.xaml">
@@ -48,7 +78,13 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="OrderMainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ProductWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="_editDetailOrderWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
