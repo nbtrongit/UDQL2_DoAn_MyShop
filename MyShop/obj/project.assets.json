@@ -46,6 +46,45 @@
           }
         }
       },
+      "ControlzEx/5.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31",
+          "System.Text.Json": "5.0.1"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "Fluent.Ribbon/9.0.4": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[5.0.1, 6.0.0)"
+        },
+        "compile": {
+          "lib/net5.0-windows7.0/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Fluent.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App"
+        ]
+      },
       "Fody/6.6.4": {
         "type": "package",
         "build": {
@@ -590,6 +629,22 @@
           }
         }
       },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
       "PropertyChanged.Fody/4.1.0": {
         "type": "package",
         "dependencies": {
@@ -1081,7 +1136,7 @@
           }
         }
       },
-      "System.Text.Json/4.7.2": {
+      "System.Text.Json/5.0.1": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {
@@ -1228,6 +1283,55 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "ControlzEx/5.0.1": {
+      "sha512": "DVJJmmnKXcVh3Bs2gKpAdPCT8HrkYTagSbFg0P9xHjp8dox9bKeaoVj9VGhPRzP9+LHs5MUXxN07/oGqeXNNcg==",
+      "type": "package",
+      "path": "controlzex/5.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "controlzex.5.0.1.nupkg.sha512",
+        "controlzex.nuspec",
+        "lib/net452/ControlzEx.dll",
+        "lib/net452/ControlzEx.pdb",
+        "lib/net452/ControlzEx.xml",
+        "lib/net462/ControlzEx.dll",
+        "lib/net462/ControlzEx.pdb",
+        "lib/net462/ControlzEx.xml",
+        "lib/net5.0-windows7.0/ControlzEx.dll",
+        "lib/net5.0-windows7.0/ControlzEx.pdb",
+        "lib/net5.0-windows7.0/ControlzEx.xml",
+        "lib/netcoreapp3.1/ControlzEx.dll",
+        "lib/netcoreapp3.1/ControlzEx.pdb",
+        "lib/netcoreapp3.1/ControlzEx.xml",
+        "logo-mini.png"
+      ]
+    },
+    "Fluent.Ribbon/9.0.4": {
+      "sha512": "nMg58+lfqa5hmU6Wgv6f8JfHv/5rr2XD3slnl3cyjhBOFnWUu7pJnzLKNwmKQBJWpSCXcG+7ikhf5l5/7shlhA==",
+      "type": "package",
+      "path": "fluent.ribbon/9.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.png",
+        "fluent.ribbon.9.0.4.nupkg.sha512",
+        "fluent.ribbon.nuspec",
+        "lib/net452/Fluent.dll",
+        "lib/net452/Fluent.pdb",
+        "lib/net452/Fluent.xml",
+        "lib/net462/Fluent.dll",
+        "lib/net462/Fluent.pdb",
+        "lib/net462/Fluent.xml",
+        "lib/net5.0-windows7.0/Fluent.dll",
+        "lib/net5.0-windows7.0/Fluent.pdb",
+        "lib/net5.0-windows7.0/Fluent.xml",
+        "lib/netcoreapp3.1/Fluent.dll",
+        "lib/netcoreapp3.1/Fluent.pdb",
+        "lib/netcoreapp3.1/Fluent.xml",
+        "license/License.txt"
       ]
     },
     "Fody/6.6.4": {
@@ -2097,6 +2201,31 @@
         "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.dll",
         "runtimes/win/lib/net7.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+      "sha512": "LZpuf82ACZWldmfMuv3CTUMDh3o0xo0uHUaybR5HgqVLDBJJ9RZLykplQ/bTJd0/VDt3EhD4iDgUgbdIUAM+Kg==",
+      "type": "package",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.31",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Design/Microsoft.Xaml.Behaviors.Design.dll",
+        "lib/net45/Microsoft.Xaml.Behaviors.dll",
+        "lib/net45/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net45/Microsoft.Xaml.Behaviors.xml",
+        "lib/net5.0-windows7.0/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll",
+        "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.pdb",
+        "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.xml",
+        "lib/netcoreapp3.1/Design/Microsoft.Xaml.Behaviors.DesignTools.dll",
+        "lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.dll",
+        "lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.pdb",
+        "lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.xml",
+        "microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
+        "microsoft.xaml.behaviors.wpf.nuspec",
+        "tools/Install.ps1"
       ]
     },
     "PropertyChanged.Fody/4.1.0": {
@@ -3320,10 +3449,10 @@
         "version.txt"
       ]
     },
-    "System.Text.Json/4.7.2": {
-      "sha512": "TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
+    "System.Text.Json/5.0.1": {
+      "sha512": "/UM3UK1dXKl8Ybysg/21gM4S8DJgkR+yLU8JwqCVbuNqQNImelntgYFAN5QxR8sJJ1kMx//hOUdf0lltosi8cQ==",
       "type": "package",
-      "path": "system.text.json/4.7.2",
+      "path": "system.text.json/5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3336,7 +3465,7 @@
         "lib/netcoreapp3.0/System.Text.Json.xml",
         "lib/netstandard2.0/System.Text.Json.dll",
         "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.4.7.2.nupkg.sha512",
+        "system.text.json.5.0.1.nupkg.sha512",
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -3489,6 +3618,7 @@
   "projectFileDependencyGroups": {
     "net7.0-windows7.0": [
       "ENTITIES >= 1.0.0",
+      "Fluent.Ribbon >= 9.0.4",
       "SERVICES >= 1.0.0"
     ]
   },
@@ -3499,11 +3629,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 7\\MyShop\\MyShop.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 8\\MyShop\\MyShop.csproj",
       "projectName": "MyShop",
-      "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 7\\MyShop\\MyShop.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 8\\MyShop\\MyShop.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 7\\MyShop\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 8\\MyShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3524,11 +3654,11 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 7\\ENTITIES\\ENTITIES.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 7\\ENTITIES\\ENTITIES.csproj"
+            "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 8\\ENTITIES\\ENTITIES.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 8\\ENTITIES\\ENTITIES.csproj"
             },
-            "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 7\\SERVICES\\SERVICES.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 7\\SERVICES\\SERVICES.csproj"
+            "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 8\\SERVICES\\SERVICES.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 8\\SERVICES\\SERVICES.csproj"
             }
           }
         }
@@ -3542,6 +3672,12 @@
     "frameworks": {
       "net7.0-windows7.0": {
         "targetAlias": "net7.0-windows",
+        "dependencies": {
+          "Fluent.Ribbon": {
+            "target": "Package",
+            "version": "[9.0.4, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

@@ -1,4 +1,5 @@
-﻿using SERVICES;
+﻿using Fluent;
+using SERVICES;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,7 +19,7 @@ namespace MyShop
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : RibbonWindow
     {
         public MainWindow()
         {
@@ -58,6 +59,41 @@ namespace MyShop
         {
             var screen = new OrderMainWindow();
             screen.ShowDialog();
+        }
+
+        private void BackstageTabItem_MouseDown_Import(object sender, MouseButtonEventArgs e)
+        {
+            if (ToolService.ImportAccess())
+            {
+                MessageBox.Show("Import dữ liệu thành công", "Import", MessageBoxButton.OK);
+            }
+            else
+            {
+                MessageBox.Show("Import lỗi (database không trống/lỗi khác)", "Lỗi", MessageBoxButton.OK);
+            }
+        }
+
+        private void BackstageTabItem_MouseDown_Exit(object sender, MouseButtonEventArgs e)
+        {
+            if (MessageBoxResult.Yes == MessageBox.Show("Tắt chương trình", "Xác nhận", MessageBoxButton.YesNo, MessageBoxImage.Question))
+            {
+                this.Close();
+            }
+        }
+
+        private void buttonCategory_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonProduct_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void buttonOrder_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

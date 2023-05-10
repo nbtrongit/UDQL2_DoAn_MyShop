@@ -10,7 +10,14 @@
   <ItemGroup>
     <None Remove="Data\Default\default-product-image.png" />
     <None Remove="Data\Icon\delete.png" />
+    <None Remove="Data\Icon\ico_category.png" />
+    <None Remove="Data\Icon\ico_order.png" />
+    <None Remove="Data\Icon\ico_product.jpg" />
     <None Remove="Data\Icon\pencil.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fluent.Ribbon" Version="9.0.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +28,9 @@
   <ItemGroup>
     <Resource Include="Data\Default\default-product-image.png" />
     <Resource Include="Data\Icon\delete.png" />
+    <Resource Include="Data\Icon\ico_category.png" />
+    <Resource Include="Data\Icon\ico_order.png" />
+    <Resource Include="Data\Icon\ico_product.jpg" />
     <Resource Include="Data\Icon\pencil.png" />
   </ItemGroup>
 

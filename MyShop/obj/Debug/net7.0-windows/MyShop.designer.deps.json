@@ -13,7 +13,7 @@
           "System.Memory.Data": "1.0.2",
           "System.Numerics.Vectors": "4.5.0",
           "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.7.2",
+          "System.Text.Json": "5.0.1",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
@@ -30,13 +30,36 @@
           "Microsoft.Identity.Client.Extensions.Msal": "2.19.3",
           "System.Memory": "4.5.4",
           "System.Security.Cryptography.ProtectedData": "7.0.0",
-          "System.Text.Json": "4.7.2",
+          "System.Text.Json": "5.0.1",
           "System.Threading.Tasks.Extensions": "4.5.4"
         },
         "runtime": {
           "lib/netstandard2.0/Azure.Identity.dll": {
             "assemblyVersion": "1.6.0.0",
             "fileVersion": "1.600.22.20503"
+          }
+        }
+      },
+      "ControlzEx/5.0.1": {
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.31",
+          "System.Text.Json": "5.0.1"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/ControlzEx.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.1.15"
+          }
+        }
+      },
+      "Fluent.Ribbon/9.0.4": {
+        "dependencies": {
+          "ControlzEx": "5.0.1"
+        },
+        "runtime": {
+          "lib/net5.0-windows7.0/Fluent.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.4.0"
           }
         }
       },
@@ -397,6 +420,14 @@
           }
         }
       },
+      "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+        "runtime": {
+          "lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll": {
+            "assemblyVersion": "1.1.0.0",
+            "fileVersion": "1.1.31.10800"
+          }
+        }
+      },
       "PropertyChanged.Fody/4.1.0": {
         "dependencies": {
           "Fody": "6.6.4"
@@ -550,7 +581,7 @@
       "System.Memory.Data/1.0.2": {
         "dependencies": {
           "System.Text.Encodings.Web": "4.7.2",
-          "System.Text.Json": "4.7.2"
+          "System.Text.Json": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/System.Memory.Data.dll": {
@@ -732,11 +763,11 @@
           }
         }
       },
-      "System.Text.Json/4.7.2": {
+      "System.Text.Json/5.0.1": {
         "runtime": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {
-            "assemblyVersion": "4.0.1.2",
-            "fileVersion": "4.700.20.21406"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.220.61120"
           }
         }
       },
@@ -783,6 +814,20 @@
       "sha512": "sha512-EycyMsb6rD2PK9P0SyibFfEhvWWttdrYhyPF4f41uzdB/44yQlV+2Wehxyg489Rj6gbPvSPgbKq0xsHJBhipZA==",
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
+    },
+    "ControlzEx/5.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DVJJmmnKXcVh3Bs2gKpAdPCT8HrkYTagSbFg0P9xHjp8dox9bKeaoVj9VGhPRzP9+LHs5MUXxN07/oGqeXNNcg==",
+      "path": "controlzex/5.0.1",
+      "hashPath": "controlzex.5.0.1.nupkg.sha512"
+    },
+    "Fluent.Ribbon/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nMg58+lfqa5hmU6Wgv6f8JfHv/5rr2XD3slnl3cyjhBOFnWUu7pJnzLKNwmKQBJWpSCXcG+7ikhf5l5/7shlhA==",
+      "path": "fluent.ribbon/9.0.4",
+      "hashPath": "fluent.ribbon.9.0.4.nupkg.sha512"
     },
     "Fody/6.6.4": {
       "type": "package",
@@ -1008,6 +1053,13 @@
       "path": "microsoft.win32.systemevents/7.0.0",
       "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
+    "Microsoft.Xaml.Behaviors.Wpf/1.1.31": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LZpuf82ACZWldmfMuv3CTUMDh3o0xo0uHUaybR5HgqVLDBJJ9RZLykplQ/bTJd0/VDt3EhD4iDgUgbdIUAM+Kg==",
+      "path": "microsoft.xaml.behaviors.wpf/1.1.31",
+      "hashPath": "microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512"
+    },
     "PropertyChanged.Fody/4.1.0": {
       "type": "package",
       "serviceable": true,
@@ -1204,12 +1256,12 @@
       "path": "system.text.encodings.web/4.7.2",
       "hashPath": "system.text.encodings.web.4.7.2.nupkg.sha512"
     },
-    "System.Text.Json/4.7.2": {
+    "System.Text.Json/5.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TcMd95wcrubm9nHvJEQs70rC0H/8omiSGGpU4FQ/ZA1URIqD4pjmFJh2Mfv1yH1eHgJDWTi2hMDXwTET+zOOyg==",
-      "path": "system.text.json/4.7.2",
-      "hashPath": "system.text.json.4.7.2.nupkg.sha512"
+      "sha512": "sha512-/UM3UK1dXKl8Ybysg/21gM4S8DJgkR+yLU8JwqCVbuNqQNImelntgYFAN5QxR8sJJ1kMx//hOUdf0lltosi8cQ==",
+      "path": "system.text.json/5.0.1",
+      "hashPath": "system.text.json.5.0.1.nupkg.sha512"
     },
     "System.Threading.Tasks/4.3.0": {
       "type": "package",
