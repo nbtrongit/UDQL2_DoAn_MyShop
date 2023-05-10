@@ -4104,11 +4104,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 11 - xong hết (9.25đ)\\MyShop\\MyShop.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 12\\MyShop\\MyShop.csproj",
       "projectName": "MyShop",
-      "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 11 - xong hết (9.25đ)\\MyShop\\MyShop.csproj",
+      "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 12\\MyShop\\MyShop.csproj",
       "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 11 - xong hết (9.25đ)\\MyShop\\obj\\",
+      "outputPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 12\\MyShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4129,11 +4129,11 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 11 - xong hết (9.25đ)\\ENTITIES\\ENTITIES.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 11 - xong hết (9.25đ)\\ENTITIES\\ENTITIES.csproj"
+            "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 12\\ENTITIES\\ENTITIES.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 12\\ENTITIES\\ENTITIES.csproj"
             },
-            "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 11 - xong hết (9.25đ)\\SERVICES\\SERVICES.csproj": {
-              "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 11 - xong hết (9.25đ)\\SERVICES\\SERVICES.csproj"
+            "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 12\\SERVICES\\SERVICES.csproj": {
+              "projectPath": "C:\\Users\\PC\\Desktop\\working\\UDQL2_DOAN - 12\\SERVICES\\SERVICES.csproj"
             }
           }
         }

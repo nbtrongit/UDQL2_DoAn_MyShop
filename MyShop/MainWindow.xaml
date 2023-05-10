@@ -27,19 +27,19 @@
                     </Fluent:BackstageTabControl>
                 </Fluent:Backstage>
             </Fluent:Ribbon.Menu>
-            <Fluent:RibbonTabItem Header="Chức Năng">
+            <Fluent:RibbonTabItem Header="Quản Lý">
                 <Fluent:RibbonGroupBox>
-                    <Fluent:Button Name="buttonCategory" Click="buttonCategory_Click" FontWeight="Bold" Header="Category">
+                    <Fluent:Button Name="buttonCategory" Click="buttonCategory_Click" FontWeight="Bold" Header="Loại Hàng">
                         <Fluent:Button.Icon>
                             <Image Source="Data/Icon/ico_category.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
                         </Fluent:Button.Icon>
                     </Fluent:Button>
-                    <Fluent:Button Name="buttonProduct" Click="buttonProduct_Click" FontWeight="Bold" Header="Product">
+                    <Fluent:Button Name="buttonProduct" Click="buttonProduct_Click" FontWeight="Bold" Header="Sản Phẩm">
                         <Fluent:Button.Icon>
                             <Image Source="Data/Icon/ico_product.jpg" RenderOptions.BitmapScalingMode="HighQuality"></Image>
                         </Fluent:Button.Icon>
                     </Fluent:Button>
-                    <Fluent:Button Name="buttonOrder" Click="buttonOrder_Click" FontWeight="Bold" Header="Order">
+                    <Fluent:Button Name="buttonOrder" Click="buttonOrder_Click" FontWeight="Bold" Header="Đơn Hàng">
                         <Fluent:Button.Icon>
                             <Image Source="Data/Icon/ico_order.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
                         </Fluent:Button.Icon>
@@ -49,12 +49,12 @@
                 
             <Fluent:RibbonTabItem Header="Báo Cáo">
                 <Fluent:RibbonGroupBox>
-                    <Fluent:Button Name="buttonRevenueProfit" Click="buttonRevenueProfit_Click" FontWeight="Bold" Header="RevenueProfit">
+                    <Fluent:Button Name="buttonRevenueProfit" Click="buttonRevenueProfit_Click" FontWeight="Bold" Header="Doanh Thu - Lợi Nhuận">
                         <Fluent:Button.Icon>
                             <Image Source="Data/Icon/ico_revenue.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
                         </Fluent:Button.Icon>
                     </Fluent:Button>
-                    <Fluent:Button Name="buttonReportProduct" Click="buttonReportProduct_Click" FontWeight="Bold" Header="Product">
+                    <Fluent:Button Name="buttonReportProduct" Click="buttonReportProduct_Click" FontWeight="Bold" Header="Số lượng bán">
                         <Fluent:Button.Icon>
                             <Image Source="Data/Icon/ico_reportproduct.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
                         </Fluent:Button.Icon>
@@ -70,7 +70,7 @@
                         </Fluent:Button.Icon>
                     </Fluent:Button>
 
-                    <Fluent:Button Name="buttonRestore" Click="buttonRestore_Click" FontWeight="Bold" Header="Backup">
+                    <Fluent:Button Name="buttonRestore" Click="buttonRestore_Click" FontWeight="Bold" Header="Restore">
                         <Fluent:Button.Icon>
                             <Image Source="Data/Icon/ico_restore.png" RenderOptions.BitmapScalingMode="HighQuality"></Image>
                         </Fluent:Button.Icon>

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -56,7 +57,12 @@ namespace MyShop
                 if (!Directory.Exists(backupPath))
                 {
                     Directory.CreateDirectory(backupPath);
+                    DirectoryInfo dInfo = new DirectoryInfo(backupPath);
+                    DirectorySecurity dSecurity = dInfo.GetAccessControl();
+                    dSecurity.AddAccessRule(new FileSystemAccessRule("Everyone", FileSystemRights.FullControl, InheritanceFlags.ContainerInherit | InheritanceFlags.ObjectInherit, PropagationFlags.None, AccessControlType.Allow));
+                    dInfo.SetAccessControl(dSecurity);
                 }
+
                 string backupFile = Path.Combine(backupPath, "MyShop.bak");
 
                 string conn = File.ReadAllText("Config.txt");
@@ -142,20 +148,20 @@ namespace MyShop
                 if (screen.ShowDialog() == true)
                 {
                     filePath = screen.FileName;
-                }
-                string databaseName = "MyShop";
+                    string databaseName = "MyShop";
 
-                string sqlRestore = $"USE master RESTORE DATABASE {databaseName} FROM DISK='{filePath}' WITH REPLACE;";
+                    string sqlRestore = $"USE master RESTORE DATABASE {databaseName} FROM DISK='{filePath}' WITH REPLACE;";
 
-                string conn = File.ReadAllText("Config.txt");
+                    string conn = File.ReadAllText("Config.txt");
 
-                using (SqlConnection sqlCon = new SqlConnection(conn))
-                {
-                    using (SqlCommand sqlCmd = new SqlCommand(sqlRestore, sqlCon))
+                    using (SqlConnection sqlCon = new SqlConnection(conn))
                     {
-                        sqlCon.Open();
-                        sqlCmd.ExecuteNonQuery();
-                        MessageBox.Show("Database Restore thành công");
+                        using (SqlCommand sqlCmd = new SqlCommand(sqlRestore, sqlCon))
+                        {
+                            sqlCon.Open();
+                            sqlCmd.ExecuteNonQuery();
+                            MessageBox.Show("Database Restore thành công");
+                        }
                     }
                 }
             }

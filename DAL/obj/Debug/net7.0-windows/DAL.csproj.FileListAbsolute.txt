@@ -208,3 +208,33 @@ C:\Users\PC\Desktop\working\UDQL2_DOAN - 11 - xong hết (9.25đ)\DAL\obj\Debug\
 C:\Users\PC\Desktop\working\UDQL2_DOAN - 11 - xong hết (9.25đ)\DAL\obj\Debug\net7.0-windows\refint\DAL.dll
 C:\Users\PC\Desktop\working\UDQL2_DOAN - 11 - xong hết (9.25đ)\DAL\obj\Debug\net7.0-windows\DAL.pdb
 C:\Users\PC\Desktop\working\UDQL2_DOAN - 11 - xong hết (9.25đ)\DAL\obj\Debug\net7.0-windows\ref\DAL.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\bin\Debug\net7.0-windows\DAL.deps.json
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\bin\Debug\net7.0-windows\DAL.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\bin\Debug\net7.0-windows\DAL.pdb
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\bin\Debug\net7.0-windows\ENTITIES.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\bin\Debug\net7.0-windows\ENTITIES.pdb
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\DAL.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\DAL.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\DAL.AssemblyInfo.cs
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\DAL.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\DAL.csproj.CopyComplete
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\DAL.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\refint\DAL.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\DAL.pdb
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12 - đóng gói\DAL\obj\Debug\net7.0-windows\ref\DAL.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\bin\Debug\net7.0-windows\DAL.deps.json
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\bin\Debug\net7.0-windows\DAL.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\bin\Debug\net7.0-windows\DAL.pdb
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\bin\Debug\net7.0-windows\ENTITIES.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\bin\Debug\net7.0-windows\ENTITIES.pdb
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\DAL.csproj.AssemblyReference.cache
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\DAL.AssemblyInfoInputs.cache
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\DAL.AssemblyInfo.cs
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\DAL.csproj.CoreCompileInputs.cache
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\DAL.csproj.CopyComplete
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\DAL.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\refint\DAL.dll
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\DAL.pdb
+C:\Users\PC\Desktop\working\UDQL2_DOAN - 12\DAL\obj\Debug\net7.0-windows\ref\DAL.dll

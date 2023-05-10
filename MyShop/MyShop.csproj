@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Backup\**" />
+    <EmbeddedResource Remove="Backup\**" />
+    <None Remove="Backup\**" />
+    <Page Remove="Backup\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Data\Default\default-product-image.png" />
     <None Remove="Data\Icon\delete.png" />
     <None Remove="Data\Icon\ico_backup.png" />
@@ -201,10 +208,6 @@
     <None Update="Data\VGA\9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Backup\" />
   </ItemGroup>
 
 </Project>
